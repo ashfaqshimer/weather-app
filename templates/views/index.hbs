@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{>links}}
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="main-content">
+        <h1> {{title}} </h1>
+        {{>header}}
+        <p>Use this site to get the weather.</p>
+        <form>
+            <input type="text" placeholder="Location">
+            <button type="submit">Search</button>
+        </form>
+        <p id='message-1'></p>
+        <p id="message-2"></p>
+    </div>
+    {{>footer}}
+
+    {{!-- Scripts --}}
+    <script src="./js/main.js"></script>
+</body>
+</html>
